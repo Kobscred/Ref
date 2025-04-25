@@ -51,7 +51,7 @@ function AudioPlayer({ setRefPlayed, setCurrentPlaying }) {
 function RefList({ refPlayed, currentPlaying }) {
 
 
-  console.log(refPlayed)
+  // console.log(refPlayed)
 
   return (
     <div className="ref-list flex flex-col p-5 md:h-screen w-[50%] overflow-y-auto">
@@ -59,7 +59,7 @@ function RefList({ refPlayed, currentPlaying }) {
       <ul className='text-gray-500'>
         {sounds.map((sound, index) => (
           <li key={index} className={` ${currentPlaying === index ? "text-white" : ""}`}>
-            {index} - {refPlayed[index] ? sound.split('/').pop().slice(0, -4) : ''}
+            {index} - {refPlayed[index] ? sound.split('/').pop().split('.mp3')[0] : ''}
           </li>
         ))}
       </ul>
