@@ -59,7 +59,7 @@ function RefList({ refPlayed, currentPlaying }) {
       <ul className='text-gray-500'>
         {sounds.map((sound, index) => (
           <li key={index} className={` ${currentPlaying === index ? "text-white" : ""}`}>
-            {index} - {refPlayed[index] ? sound.split('/').pop().replace(/\.mp3.*$/, '') : ''}
+            {index} - {refPlayed[index] ? sound.split('/').pop().split('.mp3')[0].split('-')[0] : ''}
           </li>
         ))}
       </ul>
