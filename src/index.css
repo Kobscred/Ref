@@ -48,13 +48,18 @@ button {
   transition: border-color 0.25s;
 }
 
+
+button:hover {
+  border-color: #646cff;
+}
+
 @media (max-width: 768px) {
   button:hover {
     border-color: transparent;
   }
 }
 
-button:hover {
+button:active {
   border-color: #646cff;
 }
 
