@@ -54,7 +54,7 @@ function RefList({ refPlayed, currentPlaying }) {
   // console.log(refPlayed)
 
   return (
-    <div className="ref-list flex flex-col p-5 md:h-screen w-[50%] overflow-y-auto">
+    <div className="ref-list flex flex-col p-5 md:h-screen w-[80%] md:w-[50%] overflow-y-auto">
       <h2 className='mx-auto'>Ref</h2>
       <ul className='text-gray-500'>
         {sounds.map((sound, index) => (
