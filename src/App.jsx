@@ -38,7 +38,7 @@ function AudioPlayer({ setRefPlayed, setCurrentPlaying }) {
   };
 
   return (
-    <div className="audioplayer flex flex-col items-center justify-center h-screen">
+    <div className="audioplayer flex flex-col items-center justify-center h-[70vh] md:h-screen">
       <button onClick={playRandomSound}>
         <img src={red_button} className="red_button h-[50%]" alt="red button"></img>
       </button>
